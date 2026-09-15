@@ -1,12 +1,58 @@
-   0.015632819s  INFO prepare_target{force=false package_id=variable v0.1.0 (/home/giuseppe/Documenti/RustTutorial/RustBookRepo/projects/variable) target="variable"}: cargo::core::compiler::fingerprint: stale: changed "/home/giuseppe/Documenti/RustTutorial/RustBookRepo/projects/variable/src/main.rs"
-   0.015663977s  INFO prepare_target{force=false package_id=variable v0.1.0 (/home/giuseppe/Documenti/RustTutorial/RustBookRepo/projects/variable) target="variable"}: cargo::core::compiler::fingerprint:           (vs) "/home/giuseppe/Documenti/RustTutorial/RustBookRepo/projects/variable/target/debug/.fingerprint/variable-8aa2f7625c0dc741/dep-bin-variable"
-   0.015671015s  INFO prepare_target{force=false package_id=variable v0.1.0 (/home/giuseppe/Documenti/RustTutorial/RustBookRepo/projects/variable) target="variable"}: cargo::core::compiler::fingerprint:                FileTime { seconds: 1789310146, nanos: 801020838 } < FileTime { seconds: 1789310164, nanos: 973126957 }
-   0.015774033s  INFO prepare_target{force=false package_id=variable v0.1.0 (/home/giuseppe/Documenti/RustTutorial/RustBookRepo/projects/variable) target="variable"}: cargo::core::compiler::fingerprint: fingerprint dirty for variable v0.1.0 (/home/giuseppe/Documenti/RustTutorial/RustBookRepo/projects/variable)/Check { test: false }/TargetInner { name: "variable", doc: true, ..: with_path("/home/giuseppe/Documenti/RustTutorial/RustBookRepo/projects/variable/src/main.rs", Edition2024) }
-   0.015799714s  INFO prepare_target{force=false package_id=variable v0.1.0 (/home/giuseppe/Documenti/RustTutorial/RustBookRepo/projects/variable) target="variable"}: cargo::core::compiler::fingerprint:     dirty: FsStatusOutdated(StaleItem(ChangedFile { reference: "/home/giuseppe/Documenti/RustTutorial/RustBookRepo/projects/variable/target/debug/.fingerprint/variable-8aa2f7625c0dc741/dep-bin-variable", reference_mtime: FileTime { seconds: 1789310146, nanos: 801020838 }, stale: "/home/giuseppe/Documenti/RustTutorial/RustBookRepo/projects/variable/src/main.rs", stale_mtime: FileTime { seconds: 1789310164, nanos: 973126957 } }))
-   0.016215318s  INFO prepare_target{force=false package_id=variable v0.1.0 (/home/giuseppe/Documenti/RustTutorial/RustBookRepo/projects/variable) target="variable"}: cargo::core::compiler::fingerprint: stale: changed "/home/giuseppe/Documenti/RustTutorial/RustBookRepo/projects/variable/src/main.rs"
-   0.016221976s  INFO prepare_target{force=false package_id=variable v0.1.0 (/home/giuseppe/Documenti/RustTutorial/RustBookRepo/projects/variable) target="variable"}: cargo::core::compiler::fingerprint:           (vs) "/home/giuseppe/Documenti/RustTutorial/RustBookRepo/projects/variable/target/debug/.fingerprint/variable-9c94cbea57beeaee/dep-test-bin-variable"
-   0.016226279s  INFO prepare_target{force=false package_id=variable v0.1.0 (/home/giuseppe/Documenti/RustTutorial/RustBookRepo/projects/variable) target="variable"}: cargo::core::compiler::fingerprint:                FileTime { seconds: 1789310146, nanos: 801020838 } < FileTime { seconds: 1789310164, nanos: 973126957 }
-   0.016262348s  INFO prepare_target{force=false package_id=variable v0.1.0 (/home/giuseppe/Documenti/RustTutorial/RustBookRepo/projects/variable) target="variable"}: cargo::core::compiler::fingerprint: fingerprint dirty for variable v0.1.0 (/home/giuseppe/Documenti/RustTutorial/RustBookRepo/projects/variable)/Check { test: true }/TargetInner { name: "variable", doc: true, ..: with_path("/home/giuseppe/Documenti/RustTutorial/RustBookRepo/projects/variable/src/main.rs", Edition2024) }
-   0.016270602s  INFO prepare_target{force=false package_id=variable v0.1.0 (/home/giuseppe/Documenti/RustTutorial/RustBookRepo/projects/variable) target="variable"}: cargo::core::compiler::fingerprint:     dirty: FsStatusOutdated(StaleItem(ChangedFile { reference: "/home/giuseppe/Documenti/RustTutorial/RustBookRepo/projects/variable/target/debug/.fingerprint/variable-9c94cbea57beeaee/dep-test-bin-variable", reference_mtime: FileTime { seconds: 1789310146, nanos: 801020838 }, stale: "/home/giuseppe/Documenti/RustTutorial/RustBookRepo/projects/variable/src/main.rs", stale_mtime: FileTime { seconds: 1789310164, nanos: 973126957 } }))
-    Checking variable v0.1.0 (/home/giuseppe/Documenti/RustTutorial/RustBookRepo/projects/variable)
-    Finished `dev` profile [unoptimized + debuginfo] target(s) in 0.05s
+   0.045757000s  INFO prepare_target{force=false package_id=variable v0.1.0 (C:\Users\G.Santucci\Documents\Courses\RustBook\RustBookRepo\projects\variable) target="variable"}: cargo::core::compiler::fingerprint: fingerprint error for variable v0.1.0 (C:\Users\G.Santucci\Documents\Courses\RustBook\RustBookRepo\projects\variable)/Check { test: false }/TargetInner { name: "variable", doc: true, ..: with_path("C:\\Users\\G.Santucci\\Documents\\Courses\\RustBook\\RustBookRepo\\projects\\variable\\src\\main.rs", Edition2024) }
+   0.045889900s  INFO prepare_target{force=false package_id=variable v0.1.0 (C:\Users\G.Santucci\Documents\Courses\RustBook\RustBookRepo\projects\variable) target="variable"}: cargo::core::compiler::fingerprint:     err: failed to read `C:\Users\G.Santucci\Documents\Courses\RustBook\RustBookRepo\projects\variable\target\debug\.fingerprint\variable-d8df8bd0581ad104\bin-variable`
+
+Caused by:
+    Impossibile trovare il file specificato. (os error 2)
+
+Stack backtrace:
+   0: git_midx_writer_dump
+   1: git_midx_writer_dump
+   2: git_midx_writer_dump
+   3: git_midx_writer_dump
+   4: git_filter_source_repo
+   5: git_filter_source_repo
+   6: git_filter_source_repo
+   7: git_filter_source_repo
+   8: git_filter_source_repo
+   9: git_filter_source_repo
+  10: git_filter_source_repo
+  11: git_libgit2_prerelease
+  12: <unknown>
+  13: <unknown>
+  14: <unknown>
+  15: <unknown>
+  16: git_midx_writer_dump
+  17: git_filter_source_repo
+  18: git_midx_writer_dump
+  19: BaseThreadInitThunk
+  20: RtlUserThreadStart
+   0.077792500s  INFO prepare_target{force=false package_id=variable v0.1.0 (C:\Users\G.Santucci\Documents\Courses\RustBook\RustBookRepo\projects\variable) target="variable"}: cargo::core::compiler::fingerprint: fingerprint error for variable v0.1.0 (C:\Users\G.Santucci\Documents\Courses\RustBook\RustBookRepo\projects\variable)/Check { test: true }/TargetInner { name: "variable", doc: true, ..: with_path("C:\\Users\\G.Santucci\\Documents\\Courses\\RustBook\\RustBookRepo\\projects\\variable\\src\\main.rs", Edition2024) }
+   0.077840100s  INFO prepare_target{force=false package_id=variable v0.1.0 (C:\Users\G.Santucci\Documents\Courses\RustBook\RustBookRepo\projects\variable) target="variable"}: cargo::core::compiler::fingerprint:     err: failed to read `C:\Users\G.Santucci\Documents\Courses\RustBook\RustBookRepo\projects\variable\target\debug\.fingerprint\variable-b95f21aa9d04bdb4\test-bin-variable`
+
+Caused by:
+    Impossibile trovare il file specificato. (os error 2)
+
+Stack backtrace:
+   0: git_midx_writer_dump
+   1: git_midx_writer_dump
+   2: git_midx_writer_dump
+   3: git_midx_writer_dump
+   4: git_filter_source_repo
+   5: git_filter_source_repo
+   6: git_filter_source_repo
+   7: git_filter_source_repo
+   8: git_filter_source_repo
+   9: git_filter_source_repo
+  10: git_filter_source_repo
+  11: git_libgit2_prerelease
+  12: <unknown>
+  13: <unknown>
+  14: <unknown>
+  15: <unknown>
+  16: git_midx_writer_dump
+  17: git_filter_source_repo
+  18: git_midx_writer_dump
+  19: BaseThreadInitThunk
+  20: RtlUserThreadStart
+    Checking variable v0.1.0 (C:\Users\G.Santucci\Documents\Courses\RustBook\RustBookRepo\projects\variable)
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 0.81s
