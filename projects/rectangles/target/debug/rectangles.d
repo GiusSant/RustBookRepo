@@ -1,0 +1,1 @@
+C:\Users\G.Santucci\Documents\Courses\RustBook\RustBookRepo\projects\rectangles\target\debug\rectangles.exe: C:\Users\G.Santucci\Documents\Courses\RustBook\RustBookRepo\projects\rectangles\src\main.rs
